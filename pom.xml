@@ -296,6 +296,22 @@
 					</webApp>
 				</configuration>
 			</plugin>
+			<plugin>
+                		<groupId>org.apache.maven.plugins</groupId>
+               			<artifactId>maven-jar-plugin</artifactId>
+                		<version>3.0.2</version>
+                		<configuration>
+                    			<archive>
+                        			<manifest>
+                            				<mainClass>xx.xx.xx.xx</mainClass>
+                            				<classpathPrefix>lib/</classpathPrefix>
+                            				<addClasspath>true</addClasspath>
+                            				<addExtensions>true</addExtensions>
+                            				<packageName>xx.xx.xx</packageName>
+                        			</manifest>
+                    			</archive>
+                		</configuration>
+            		</plugin>
 		</plugins>
 	</build>
 </project>
